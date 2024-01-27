@@ -25,3 +25,13 @@ n
 >domain/src/main/java/org/example/domain/category/Category.java,3\0\30ce6df4e84c1e2c11149cfb9a13c8954bfd7b3a
 r
 Bdomain/src/test/java/org/example/domain/category/CategoryTest.java,3\0\30cca4e36a9700d66afc208fceed224fad9e0346
+q
+Adomain/src/main/java/org/example/domain/category/ValueObject.java,d\9\d97cca1cb29642c4ca9d2cd42dcc85f3ae909e60
+h
+8domain/src/main/java/org/example/domain/ValueObject.java,6\4\64e5b1945715e03ce9b9fc91564bfeb8a496bc21
+c
+3domain/src/main/java/org/example/domain/Entity.java,0\d\0d024e36d069a0ac1bc0eeb46f81d8573af3274e
+g
+7domain/src/main/java/org/example/domain/Identifier.java,8\8\88243597861df40ccd040c2fb73936c38bdf9e6e
+j
+:domain/src/main/java/org/example/domain/AggregateRoot.java,e\8\e8f35dbf04d133a0486821e5699c918bd9d1976e
