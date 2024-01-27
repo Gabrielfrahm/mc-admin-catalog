@@ -1,0 +1,5 @@
+rootProject.name = 'mc-admin-catalog'
+include 'domain'
+include 'application'
+include 'infra'
+
