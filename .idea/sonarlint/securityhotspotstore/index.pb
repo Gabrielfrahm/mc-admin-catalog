@@ -35,3 +35,5 @@ g
 7domain/src/main/java/org/example/domain/Identifier.java,8\8\88243597861df40ccd040c2fb73936c38bdf9e6e
 j
 :domain/src/main/java/org/example/domain/AggregateRoot.java,e\8\e8f35dbf04d133a0486821e5699c918bd9d1976e
+p
+@domain/src/main/java/org/example/domain/category/CategoryID.java,9\0\90b1faa5fb15620682365f78016ce0d4bcbaa55f
