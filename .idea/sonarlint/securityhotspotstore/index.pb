@@ -21,3 +21,7 @@ r
 Bapplication/src/test/java/org/example/application/UseCaseTest.java,d\0\d0d1c73bb67098ca4dc95d62b8aa5194083fe337
 c
 3infra/src/test/java/org/example/infra/MainTest.java,3\a\3ac1b4b9b2bb2105ff4532ee82f34c7821a1e08c
+n
+>domain/src/main/java/org/example/domain/category/Category.java,3\0\30ce6df4e84c1e2c11149cfb9a13c8954bfd7b3a
+r
+Bdomain/src/test/java/org/example/domain/category/CategoryTest.java,3\0\30cca4e36a9700d66afc208fceed224fad9e0346
