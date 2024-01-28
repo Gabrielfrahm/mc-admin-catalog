@@ -1,6 +1,7 @@
 package org.example.domain.category;
 
 import org.example.domain.AggregateRoot;
+import org.example.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -39,6 +40,11 @@ public class Category extends AggregateRoot<CategoryID> {
         final var id = CategoryID.unique();
         final var now = Instant.now();
         return new Category(id, aName,aDescription,isActive, now, now, null);
+    }
+
+    @Override
+    public void validate(ValidationHandler handler) {
+        new CategoryValidator(this, handler).validate();
     }
 
     public  CategoryID getId(){
