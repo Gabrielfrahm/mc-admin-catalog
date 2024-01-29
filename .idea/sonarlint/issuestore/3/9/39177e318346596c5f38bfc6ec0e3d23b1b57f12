@@ -1,3 +1,5 @@
 
 G	java:S106"+Replace this use of System.out by a logger.(Áš§¹8àÿ¢ÞÔ1
-L	java:S106"+Replace this use of System.out by a logger.(ô£œÒüÿÿÿÿ8áÿ¢ÞÔ1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8áÿ¢ÞÔ1
+^
+java:S1128"<Remove this unused import 'org.example.application.UseCase'.(œ¢Ü”ùÿÿÿÿ8ƒ»§Õ1

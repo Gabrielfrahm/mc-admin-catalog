@@ -4,7 +4,6 @@ import org.example.domain.AggregateRoot;
 import org.example.domain.validation.ValidationHandler;
 
 import java.time.Instant;
-import java.util.UUID;
 
 public class Category extends AggregateRoot<CategoryID> {
     private String name;
@@ -46,6 +45,23 @@ public class Category extends AggregateRoot<CategoryID> {
     @Override
     public void validate(ValidationHandler handler) {
         new CategoryValidator(this, handler).validate();
+    }
+
+    public Category deactivate(){
+        if(getDeletedAt() == null) {
+            this.deletedAt = Instant.now();
+        }
+
+        this.active = false;
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public Category activate(){
+        this.deletedAt = null;
+        this.active = true;
+        this.updatedAt = Instant.now();
+        return this;
     }
 
     public  CategoryID getId(){
