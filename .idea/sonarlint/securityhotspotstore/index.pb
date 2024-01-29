@@ -37,15 +37,11 @@ m
 =domain/src/main/java/org/example/domain/validation/Error.java,1\9\195eb2f9b695335bb6e7bc0fe16b61f2373773ed
 q
 Adomain/src/main/java/org/example/domain/validation/Validator.java,b\a\ba7e0a6818e47eb892b6b90ca299ac5cc5a40bbc
-x
-Hdomain/src/main/java/org/example/domain/category/CategoryValidatior.java,4\d\4d9e083246e3681d2534a9fb02149e133d9c692e
 w
 Gdomain/src/main/java/org/example/domain/category/CategoryValidator.java,e\b\ebaa70ab94ac52b6dd15895549c51d01757cba93
-x
-Hdomain/src/main/java/org/example/domain/exceptions/DomainExecptionm.java,4\e\4e867f92f26f810658b0ce51b325ecb2466df06a
-w
-Gdomain/src/main/java/org/example/domain/exceptions/DomainExecption.java,6\4\645da0004e3b8e5c135bd4cfa1e1b1bd2cd5c20d
 w
 Gdomain/src/main/java/org/example/domain/exceptions/DomainException.java,9\5\95a89e47fdf47a5ff8dcbb3dc33e0ee0b801088d
 ‡
 Wdomain/src/main/java/org/example/domain/validation/handler/ThrowsValidationHandler.java,3\9\3957264bc734b5907e25d17cbc8cbc6e064ae8e9
+}
+Mdomain/src/main/java/org/example/domain/exceptions/NoStacktraceException.java,e\6\e6a5e2d5eb698412fba468b0ba304c3f6f0f1d81
