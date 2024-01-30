@@ -45,3 +45,9 @@ Gdomain/src/main/java/org/example/domain/exceptions/DomainException.java,9\5\95
 Wdomain/src/main/java/org/example/domain/validation/handler/ThrowsValidationHandler.java,3\9\3957264bc734b5907e25d17cbc8cbc6e064ae8e9
 }
 Mdomain/src/main/java/org/example/domain/exceptions/NoStacktraceException.java,e\6\e6a5e2d5eb698412fba468b0ba304c3f6f0f1d81
+u
+Edomain/src/main/java/org/example/domain/category/CategoryGateway.java,6\b\6b210116a87d6583ba30b93ab0455006bd15ff2a
+r
+Bdomain/src/main/java/org/example/domain/pagination/Pagination.java,6\c\6c05208333e9f00f51054ffb2478bf07543fd530
+y
+Idomain/src/main/java/org/example/domain/category/CategorySearchQuery.java,2\0\20578eeb086ae91059a856f1681b7e6bdcaaee3b
