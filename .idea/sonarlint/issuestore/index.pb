@@ -51,3 +51,17 @@ r
 Bdomain/src/main/java/org/example/domain/pagination/Pagination.java,6\c\6c05208333e9f00f51054ffb2478bf07543fd530
 y
 Idomain/src/main/java/org/example/domain/category/CategorySearchQuery.java,2\0\20578eeb086ae91059a856f1681b7e6bdcaaee3b
+r
+Bapplication/src/main/java/org/example/application/UnitUseCase.java,f\d\fd11caa3a1d9ea9dd4b4fadabf5a3953e258140e
+u
+Eapplication/src/main/java/org/example/application/NullaryUseCase.java,b\1\b1d4dfe934994c224517addde512b3480d3c2ad2
+ê
+`application/src/test/java/org/example/application/category/create/CreateCategoryUseCaseTest.java,d\4\d4090b1e55854473837c4b2659aaf52ed08944f2
+å
+\application/src/main/java/org/example/application/category/create/CreateCategoryCommand.java,b\b\bbb9b2f3c094ca3641af4c2bf1a552a60ddf9425
+ã
+[application/src/main/java/org/example/application/category/create/CreateCategoryOutput.java,c\8\c89d99062a291fbb2787d496d73087d3a4d01110
+å
+\application/src/main/java/org/example/application/category/create/CreateCategoryUseCase.java,4\c\4c08a7844b22c9b35bccfefaba887dbd0cf43ab2
+ì
+capplication/src/main/java/org/example/application/category/create/DefaultCreateCategoryUseCase.java,f\4\f43c96d35a91c57b54cb339766c3e367ba870fc8
