@@ -1,5 +1,7 @@
 
-H
-java:S2160"+Override the "equals" method in this class.(ö÷ÅÍ8„Ä¶¦Õ1
+G
+java:S2160"+Override the "equals" method in this class.(¢Ñ®8„Ä¶¦Õ1
 \
-java:S1161P":Add the "@Override" annotation above this method signature(“êÊ‚ûÿÿÿÿ8‰Ä¶¦Õ1
+java:S1161q":Add the "@Override" annotation above this method signature(“êÊ‚ûÿÿÿÿ8‰Ä¶¦Õ1
+q
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(ìÿô¯8£¥ùËÖ1

@@ -67,3 +67,15 @@ Eapplication/src/main/java/org/example/application/NullaryUseCase.java,b\1\b1d4
 capplication/src/main/java/org/example/application/category/create/DefaultCreateCategoryUseCase.java,f\4\f43c96d35a91c57b54cb339766c3e367ba870fc8
 |
 Ldomain/src/main/java/org/example/domain/validation/handler/Notification.java,2\d\2d9b45c455276cc6794dc48cebfe619095ae2742
+ê
+`application/src/test/java/org/example/application/category/update/UpdateCategoryUseCaseTest.java,c\d\cd6ff1ad9cec2b2a6dc6ac047f904801384a9060
+å
+\application/src/main/java/org/example/application/category/update/UpdateCategoryCommand.java,c\a\cacb6008923dff3ca665157a27922278e745fe66
+ã
+[application/src/main/java/org/example/application/category/update/UpdateCategoryOutput.java,e\7\e7e2cea95a034f95d25305548ecbe44f0b42dee4
+å
+\application/src/main/java/org/example/application/category/update/UpdateCategoryUseCase.java,7\7\775abad4980498f4b097700d7e0b4063f2884906
+ã
+[application/src/main/java/org/example/application/category/update/DefaultUpdateUseCase.java,8\1\8145261d9f000b7c8ecfb42f27a45e27ce24613b
+ì
+capplication/src/main/java/org/example/application/category/update/DefaultUpdateCategoryUseCase.java,e\3\e38b4da55f732e8daa6018da3236c46879553d94

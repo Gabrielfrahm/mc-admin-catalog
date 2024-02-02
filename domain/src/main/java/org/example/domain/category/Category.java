@@ -5,103 +5,146 @@ import org.example.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 
-public class Category extends AggregateRoot<CategoryID> {
-    private String name;
-    private String description;
-    private boolean active;
-    private Instant createdAt; // o instant ele é mais preciso. pq se basea em um marco no tempo.
-    private Instant updatedAt; // o instant não leva em conta o timezone e sim o utc.
-    private Instant deletedAt;
+public class Category extends AggregateRoot<CategoryID> implements Cloneable {
+  private String name;
+  private String description;
+  private boolean active;
+  private Instant createdAt; // o instant ele é mais preciso. pq se basea em um marco no tempo.
+  private Instant updatedAt; // o instant não leva em conta o timezone e sim o utc.
+  private Instant deletedAt;
 
-    private Category(
-            final CategoryID id,
-            final String name,
-            final String description,
-            final boolean active,
-            final Instant createdAt,
-            final Instant updatedAt,
-            final Instant deletedAt
-    ) {
-        super(id);
-        this.name = name;
-        this.description = description;
-        this.active = active;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-        this.deletedAt = deletedAt;
+  private Category(
+      final CategoryID id,
+      final String name,
+      final String description,
+      final boolean active,
+      final Instant createdAt,
+      final Instant updatedAt,
+      final Instant deletedAt
+  ) {
+    super(id);
+    this.name = name;
+    this.description = description;
+    this.active = active;
+    this.createdAt = createdAt;
+    this.updatedAt = updatedAt;
+    this.deletedAt = deletedAt;
+  }
+
+  public static Category newCategory(
+      final String aName,
+      final String aDescription,
+      final boolean isActive
+  ) {
+    final var id = CategoryID.unique();
+    final var now = Instant.now();
+    final var deletedAt = isActive ? null : now;
+    return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
+  }
+
+  @Override
+  public void validate(ValidationHandler handler) {
+    new CategoryValidator(this, handler).validate();
+  }
+
+  public static Category with(
+      final CategoryID anId,
+      final String name,
+      final String description,
+      final boolean active,
+      final Instant createdAt,
+      final Instant updatedAt,
+      final Instant deletedAt
+  ) {
+    return new Category(
+        anId,
+        name,
+        description,
+        active,
+        createdAt,
+        updatedAt,
+        deletedAt
+    );
+  }
+
+  public static  Category with(final Category aCategory){
+    return with(
+        aCategory.getId(),
+        aCategory.getName(),
+        aCategory.getDescription(),
+        aCategory.isActive(),
+        aCategory.getCreatedAt(),
+        aCategory.getUpdatedAt(),
+        aCategory.getDeletedAt()
+    );
+  }
+
+
+  public Category deactivate() {
+    if (getDeletedAt() == null) {
+      this.deletedAt = Instant.now();
     }
 
-    public static Category newCategory(
-            final String aName,
-            final String aDescription,
-            final boolean isActive
-    ){
-        final var id = CategoryID.unique();
-        final var now = Instant.now();
-        final var deletedAt = isActive ? null : now;
-        return new Category(id, aName,aDescription,isActive, now, now, deletedAt);
+    this.active = false;
+    this.updatedAt = Instant.now();
+    return this;
+  }
+
+  public Category activate() {
+    this.deletedAt = null;
+    this.active = true;
+    this.updatedAt = Instant.now();
+    return this;
+  }
+
+  public Category update(final String aName, final String aDescription, final boolean isActive) {
+    this.name = aName;
+    this.description = aDescription;
+    if (isActive) {
+      activate();
+    } else {
+      deactivate();
     }
 
-    @Override
-    public void validate(ValidationHandler handler) {
-        new CategoryValidator(this, handler).validate();
+    this.updatedAt = Instant.now();
+    return this;
+  }
+
+  public CategoryID getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public boolean isActive() {
+    return active;
+  }
+
+  public Instant getCreatedAt() {
+    return createdAt;
+  }
+
+  public Instant getUpdatedAt() {
+    return updatedAt;
+  }
+
+  public Instant getDeletedAt() {
+    return deletedAt;
+  }
+
+  //comportamento da JVM de gerar um novo clone com todos os atributos
+  @Override
+  public Category clone() {
+    try {
+      return (Category) super.clone();
+    } catch (CloneNotSupportedException e) {
+      throw new AssertionError();
     }
-
-    public Category deactivate(){
-        if(getDeletedAt() == null) {
-            this.deletedAt = Instant.now();
-        }
-
-        this.active = false;
-        this.updatedAt = Instant.now();
-        return this;
-    }
-
-    public Category activate(){
-        this.deletedAt = null;
-        this.active = true;
-        this.updatedAt = Instant.now();
-        return this;
-    }
-
-    public Category update(final String aName, final String aDescription, final boolean isActive){
-        this.name = aName;
-        this.description= aDescription;
-        if(isActive){
-            activate();
-        }else{
-            deactivate();
-        }
-
-        this.updatedAt = Instant.now();
-        return this;
-    }
-
-    public  CategoryID getId(){
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
-
-    public Instant getCreatedAt() {
-        return createdAt;
-    }
-
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public Instant getDeletedAt() {
-        return deletedAt;
-    }
+  }
 }
