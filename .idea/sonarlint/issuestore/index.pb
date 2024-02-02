@@ -65,3 +65,5 @@ Eapplication/src/main/java/org/example/application/NullaryUseCase.java,b\1\b1d4
 \application/src/main/java/org/example/application/category/create/CreateCategoryUseCase.java,4\c\4c08a7844b22c9b35bccfefaba887dbd0cf43ab2
 “
 capplication/src/main/java/org/example/application/category/create/DefaultCreateCategoryUseCase.java,f\4\f43c96d35a91c57b54cb339766c3e367ba870fc8
+|
+Ldomain/src/main/java/org/example/domain/validation/handler/Notification.java,2\d\2d9b45c455276cc6794dc48cebfe619095ae2742
