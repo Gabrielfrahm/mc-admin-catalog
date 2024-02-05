@@ -1,9 +1,29 @@
 
 :
-java:S5786!"Remove this 'public' modifier.(º˜ØJ8Ş±‚ÍÖ1
+java:S5786#"Remove this 'public' modifier.(º˜ØJ8íÀóøÖ1
 @
-java:S5786"Remove this 'public' modifier.(ê—ÇÛıÿÿÿÿ8Ş±‚ÍÖ1
+java:S5786N"Remove this 'public' modifier.(è–ô¨ùÿÿÿÿ8íÀóøÖ1
+;
+java:S5786k"Remove this 'public' modifier.(œ¤ÚÌ8íÀóøÖ1
+A
+java:S5786’"Remove this 'public' modifier.(ÌÇ™†úÿÿÿÿ8íÀóøÖ1
+<
+java:S5786³"Remove this 'public' modifier.(ê¦ßì8îÀóøÖ1
+@
+java:S5786"Remove this 'public' modifier.(ê—ÇÛıÿÿÿÿ8îÀóøÖ1
 _
-java:S60681"CRemove this useless "eq(...)" invocation; pass the values directly.(Úé.8Ş±‚ÍÖ1
+java:S60683"CRemove this useless "eq(...)" invocation; pass the values directly.(Úé.8îÀóøÖ1
 e
-java:S6068>"CRemove this useless "eq(...)" invocation; pass the values directly.(ÖòĞ¸øÿÿÿÿ8ß±‚ÍÖ1
+java:S6068@"CRemove this useless "eq(...)" invocation; pass the values directly.(ÖòĞ¸øÿÿÿÿ8îÀóøÖ1
+e
+java:S6068_"CRemove this useless "eq(...)" invocation; pass the values directly.(Ñô€»ıÿÿÿÿ8ñÀóøÖ1
+e
+java:S6068z"CRemove this useless "eq(...)" invocation; pass the values directly.(Ñô€»ıÿÿÿÿ8òÀóøÖ1
+f
+java:S6068…"CRemove this useless "eq(...)" invocation; pass the values directly.(¦°®§øÿÿÿÿ8òÀóøÖ1
+f
+java:S6068Ÿ"CRemove this useless "eq(...)" invocation; pass the values directly.(Ñô€»ıÿÿÿÿ8óÀóøÖ1
+f
+java:S6068Â"CRemove this useless "eq(...)" invocation; pass the values directly.(¹¯ßÛşÿÿÿÿ8ôÀóøÖ1
+f
+java:S6068Ê"CRemove this useless "eq(...)" invocation; pass the values directly.(ˆ«†òÿÿÿÿÿ8˜²õøÖ1

@@ -1,0 +1,23 @@
+
+;
+java:S5786"Remove this 'public' modifier.(óì ¬8¿íİùÖ1
+;
+java:S5786+"Remove this 'public' modifier.(®ÛÅ…8ÀíİùÖ1
+;
+java:S57866"Remove this 'public' modifier.(™âñõ8ÀíİùÖ1
+;
+java:S5786"Remove this 'public' modifier.(‘¢û8ÀíİùÖ1
+^
+java:S6068#"CRemove this useless "eq(...)" invocation; pass the values directly.(Éƒ)8ÀíİùÖ1
+e
+java:S6068'"CRemove this useless "eq(...)" invocation; pass the values directly.(»î¥Ÿıÿÿÿÿ8ÀíİùÖ1
+^
+java:S6068."CRemove this useless "eq(...)" invocation; pass the values directly.(Éƒ)8ÆÀŞùÖ1
+e
+java:S60682"CRemove this useless "eq(...)" invocation; pass the values directly.(»î¥Ÿıÿÿÿÿ8ÆÀŞùÖ1
+e
+java:S6068:"CRemove this useless "eq(...)" invocation; pass the values directly.(€˜üÿÿÿÿ8‡ïàùÖ1
+
+java:S5778<"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(óÆ’¾8“ÖãùÖ1
+e
+java:S6068>"CRemove this useless "eq(...)" invocation; pass the values directly.(»î¥Ÿıÿÿÿÿ8‡ïàùÖ1
